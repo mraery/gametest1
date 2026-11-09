@@ -1,0 +1,1663 @@
+[gd_scene format=3 uid="uid://de8c0dplmofo7"]
+
+[ext_resource type="Script" uid="uid://lh4v228etcuf" path="res://masa.gd" id="1_masa"]
+[ext_resource type="Script" uid="uid://iyo8cor4xru3" path="res://talep_fisi.gd" id="2_fis"]
+[ext_resource type="Script" uid="uid://crjschsqy6twq" path="res://suruklenebilir.gd" id="3_surukle"]
+[ext_resource type="Texture2D" uid="uid://cvs0y1gh4qdq2" path="res://assets/ana_ekran_arkaplan.png" id="4_arkaplan"]
+[ext_resource type="Texture2D" uid="uid://ditv2ohej8jgm" path="res://assets/kuyruk_1.png" id="5_k1"]
+[ext_resource type="Texture2D" uid="uid://dngjwgynxgngv" path="res://assets/kuyruk_2.png" id="6_k2"]
+[ext_resource type="Texture2D" uid="uid://cpameffl02h5r" path="res://assets/kuyruk_3.png" id="7_k3"]
+[ext_resource type="Texture2D" uid="uid://c4og78k7l37us" path="res://assets/kuyruk_4.png" id="8_k4"]
+[ext_resource type="Texture2D" uid="uid://b2tf1hnpwumg0" path="res://assets/kuyruk_5.png" id="9_k5"]
+[ext_resource type="Texture2D" uid="uid://ort47jew23c" path="res://assets/kuyruk_6.png" id="10_k6"]
+[ext_resource type="Texture2D" uid="uid://gl07sh5vsx3u" path="res://assets/kuyruk_7.png" id="11_k7"]
+[ext_resource type="Texture2D" uid="uid://c0x5a5rcg5kt" path="res://assets/mahkum.png" id="12_mahkum"]
+[ext_resource type="Texture2D" uid="uid://dc3hpjnjkk8rr" path="res://assets/yeni_kafes_kepenk.png" id="13_kepenk"]
+[ext_resource type="Texture2D" uid="uid://bx2csv8gvkd6g" path="res://assets/yeni_emir_notu.png" id="14_emir"]
+[ext_resource type="Texture2D" uid="uid://dpd2w5crsvygs" path="res://assets/yeni_gazete.png" id="15_gazete"]
+[ext_resource type="Texture2D" uid="uid://c5d6pkw75ilr2" path="res://assets/yeni_kural_kitabi.png" id="16_kitap"]
+[ext_resource type="Texture2D" uid="uid://c5c7coa8hsoo3" path="res://assets/yeni_talep_formu_bos.png" id="17_form"]
+[ext_resource type="Texture2D" uid="uid://cni5ujxxxc6" path="res://assets/yeni_damga_red.png" id="18_red_n"]
+[ext_resource type="Texture2D" uid="uid://k8v3dl8jehly" path="res://assets/yeni_damga_red_basili.png" id="19_red_p"]
+[ext_resource type="Texture2D" uid="uid://wdt4sjx3r6sb" path="res://assets/yeni_damga_onay.png" id="20_onay_n"]
+[ext_resource type="Texture2D" uid="uid://hrxiqgmbvg4d" path="res://assets/yeni_damga_onay_basili.png" id="21_onay_p"]
+[ext_resource type="FontFile" uid="uid://ddp1rths6x3xg" path="res://assets/retro_font.ttf" id="22_font"]
+[ext_resource type="Texture2D" uid="uid://b5k8u0ymex84d" path="res://assets/damga_baski_onay.png" id="23_baski_onay"]
+[ext_resource type="Texture2D" uid="uid://balges1aa4avh" path="res://assets/damga_cekmecesi_taban.png" id="25_cekmece_taban"]
+[ext_resource type="Texture2D" uid="uid://jrojd8xa8psu" path="res://assets/dolap_ilac.png" id="27_dolap_ilac"]
+[ext_resource type="Texture2D" uid="uid://cuic6wlheh228" path="res://assets/dolap_yiyecek.png" id="28_dolap_yemek"]
+[ext_resource type="Texture2D" uid="uid://b0bsgtoxpjmiy" path="res://assets/dolap_icecek.png" id="29_dolap_icecek"]
+[ext_resource type="Script" uid="uid://5mwql6cywmxb" path="res://dolap_esyasi.gd" id="30_esya_kod"]
+[ext_resource type="Texture2D" uid="uid://dkhcwvvl7po15" path="res://assets/esya_ilac.png" id="31_esya_ilac"]
+[ext_resource type="Texture2D" uid="uid://cknjkv0osodej" path="res://assets/esya_sargi.png" id="32_esya_sargi"]
+[ext_resource type="Texture2D" uid="uid://bm7m4pa1y2k8" path="res://assets/esya_konserve.png" id="33_esya_konserve"]
+[ext_resource type="Texture2D" uid="uid://dl16nxp6qyv5w" path="res://assets/esya_cips.png" id="34_esya_cips"]
+[ext_resource type="Texture2D" uid="uid://b34s36ssmyd0n" path="res://assets/esya_kola.png" id="35_esya_kola"]
+[ext_resource type="Texture2D" uid="uid://bmexrdf5mm6ay" path="res://assets/esya_meyvesuyu.png" id="36_esya_meyvesuyu"]
+[ext_resource type="Texture2D" uid="uid://dyjsiq113u8rm" path="res://assets/gazete_acik.png" id="37_gazete_acik"]
+[ext_resource type="Texture2D" uid="uid://bddi35dkdh1sa" path="res://assets/kirmizi_dugme_normal.png" id="38_dugme_n"]
+[ext_resource type="Texture2D" uid="uid://dcdq5tw01tmvo" path="res://assets/kirmizi_dugme_basili.png" id="39_dugme_p"]
+[ext_resource type="Texture2D" uid="uid://cy8lrxgvn8bfe" path="res://assets/delikteki_fis.png" id="40_delik_fis"]
+[ext_resource type="Texture2D" uid="uid://b5umn17l8oa42" path="res://assets/kural_kitabi_acik.png" id="41_kitap_acik"]
+[ext_resource type="Texture2D" uid="uid://jhk25d051rbe" path="res://assets/teslim_bolmesi.png" id="42_teslim_bolmesi"]
+[ext_resource type="Texture2D" uid="uid://ckikf0k328l76" path="res://assets/diyalog_seridi_1.png" id="43_diyalog_1"]
+[ext_resource type="Texture2D" uid="uid://bv2mhsw3f1mti" path="res://assets/diyalog_seridi_2.png" id="44_diyalog_2"]
+[ext_resource type="Script" uid="uid://dcq2ow3haxcji" path="res://damga_aleti.gd" id="45_damga_aleti"]
+[ext_resource type="Texture2D" uid="uid://dhi3mwfh0162v" path="res://assets/damga_cekmecesi_cerceve.png" id="46_cekmece_cerceve"]
+[ext_resource type="Texture2D" uid="uid://3565k7aajnrb" path="res://assets/damga_golge.png" id="47_damga_golge"]
+[ext_resource type="Texture2D" uid="uid://ccpxesk2u3usk" path="res://assets/esya_ilac_yesil.png" id="48_ilac_yesil"]
+[ext_resource type="Texture2D" uid="uid://yxpc3hxmv3wh" path="res://assets/esya_ilac_mavi.png" id="49_ilac_mavi"]
+[ext_resource type="Texture2D" uid="uid://du0dys6bk2q1a" path="res://assets/gardiyan_gazeteli.png" id="50_gardiyan_gazeteli"]
+
+[node name="masa" type="Control" unique_id=708038052]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_masa")
+
+[node name="ArkaPlan" type="TextureRect" parent="." unique_id=792818692]
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 571.0
+mouse_filter = 2
+texture = ExtResource("4_arkaplan")
+expand_mode = 1
+
+[node name="KuyrukBolumu" type="Control" parent="." unique_id=434606754]
+clip_contents = true
+anchors_preset = 0
+offset_right = 344.0
+offset_bottom = 228.0
+mouse_filter = 2
+
+[node name="Siluet1" type="TextureRect" parent="KuyrukBolumu" unique_id=1935923305]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 104.0
+offset_right = 42.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("5_k1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet2" type="TextureRect" parent="KuyrukBolumu" unique_id=851074183]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 104.0
+offset_right = 72.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("6_k2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet3" type="TextureRect" parent="KuyrukBolumu" unique_id=1194615739]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 104.0
+offset_right = 102.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("7_k3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet4" type="TextureRect" parent="KuyrukBolumu" unique_id=2059685906]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 104.0
+offset_right = 132.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("8_k4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet5" type="TextureRect" parent="KuyrukBolumu" unique_id=1642326666]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 104.0
+offset_right = 162.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("9_k5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet6" type="TextureRect" parent="KuyrukBolumu" unique_id=1784154478]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 104.0
+offset_right = 192.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("10_k6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet7" type="TextureRect" parent="KuyrukBolumu" unique_id=598893191]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 104.0
+offset_right = 222.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("11_k7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet8" type="TextureRect" parent="KuyrukBolumu" unique_id=2084762598]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 104.0
+offset_right = 252.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("5_k1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet9" type="TextureRect" parent="KuyrukBolumu" unique_id=1085838163]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 104.0
+offset_right = 282.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("6_k2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Siluet10" type="TextureRect" parent="KuyrukBolumu" unique_id=1164255490]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 104.0
+offset_right = 312.0
+offset_bottom = 192.0
+pivot_offset = Vector2(18, 86)
+mouse_filter = 2
+texture = ExtResource("7_k3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MahkumPenceresi" type="Control" parent="." unique_id=138547913]
+clip_contents = true
+anchors_preset = 0
+offset_left = 368.0
+offset_top = 28.0
+offset_right = 634.0
+offset_bottom = 198.0
+mouse_filter = 2
+
+[node name="MahkumGorsel" type="TextureRect" parent="MahkumPenceresi" unique_id=19137201]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 14.0
+offset_right = 208.0
+offset_bottom = 168.0
+mouse_filter = 2
+texture = ExtResource("12_mahkum")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Kepenk" type="TextureRect" parent="MahkumPenceresi" unique_id=634850041]
+layout_mode = 0
+offset_right = 266.0
+offset_bottom = 170.0
+mouse_filter = 2
+texture = ExtResource("13_kepenk")
+expand_mode = 1
+
+[node name="Gorevli" type="TextureRect" parent="." unique_id=1301968913]
+visible = false
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 175.0
+offset_right = 1108.0
+offset_bottom = 317.0
+mouse_filter = 2
+texture = ExtResource("50_gardiyan_gazeteli")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GorevliBalonu" type="ColorRect" parent="Gorevli" unique_id=937371675]
+visible = false
+layout_mode = 0
+offset_left = -170.0
+offset_top = 12.0
+offset_right = -10.0
+offset_bottom = 44.0
+color = Color(0.12, 0.13, 0.15, 0.94)
+
+[node name="GorevliYazi" type="Label" parent="Gorevli/GorevliBalonu" unique_id=1946219730]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 154.0
+offset_bottom = 28.0
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "Günün gazetesi memur bey."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="KonusmaBalonu" type="Control" parent="." unique_id=215149755]
+visible = false
+anchors_preset = 0
+offset_left = 528.0
+offset_top = 12.0
+offset_right = 792.0
+offset_bottom = 136.0
+mouse_filter = 2
+
+[node name="DiyalogSeridi1" type="TextureRect" parent="KonusmaBalonu" unique_id=1513397250]
+layout_mode = 0
+offset_right = 262.0
+offset_bottom = 58.0
+mouse_filter = 2
+texture = ExtResource("43_diyalog_1")
+expand_mode = 1
+
+[node name="DiyalogYazi1" type="Label" parent="KonusmaBalonu/DiyalogSeridi1" unique_id=2065396877]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 250.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.11, 0.08, 0.06, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "Memur bey, başım çatlıyor..."
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="DiyalogSeridi2" type="TextureRect" parent="KonusmaBalonu" unique_id=1117536609]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 56.0
+offset_right = 264.0
+offset_bottom = 124.0
+mouse_filter = 2
+texture = ExtResource("44_diyalog_2")
+expand_mode = 1
+
+[node name="DiyalogYazi2" type="Label" parent="KonusmaBalonu/DiyalogSeridi2" unique_id=891832450]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 250.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.11, 0.08, 0.06, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "İlacımı ve konservemi verin!"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="SiradakiKutusu" type="Control" parent="." unique_id=1950547664]
+anchors_preset = 0
+offset_left = 686.0
+offset_top = 468.0
+offset_right = 770.0
+offset_bottom = 558.0
+
+[node name="SiradakiButonu" type="TextureButton" parent="SiradakiKutusu" unique_id=2131093910]
+layout_mode = 0
+offset_right = 84.0
+offset_bottom = 72.0
+tooltip_text = "Sıradaki Mahkumu Çağır (Kırmızı Masa Düğmesi) [N / Enter]"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("38_dugme_n")
+texture_pressed = ExtResource("39_dugme_p")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="IncelemeKutusu" type="Control" parent="." unique_id=848450518]
+anchors_preset = 0
+offset_left = 576.0
+offset_top = 468.0
+offset_right = 672.0
+offset_bottom = 558.0
+
+[node name="IncelemeButonu" type="Button" parent="IncelemeKutusu" unique_id=426671824]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 68.0
+tooltip_text = "Çelişki Eşleştirme Modu (İki bilgiyi karşılaştır) [Space / Tab]"
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.95, 0.88, 0.72, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 14
+text = "[ ! ]
+İNCELE"
+
+[node name="IncelemeEtiket" type="Label" parent="IncelemeKutusu" unique_id=1595792406]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 68.0
+offset_right = 102.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.92, 0.82, 0.62, 0.95)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 14
+text = "EŞLEŞTİR"
+horizontal_alignment = 1
+
+[node name="TeslimBolmesi" type="TextureRect" parent="." unique_id=1810682212]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 204.0
+offset_right = 632.0
+offset_bottom = 278.0
+mouse_filter = 2
+texture = ExtResource("42_teslim_bolmesi")
+expand_mode = 1
+
+[node name="KantinDolaplari" type="ColorRect" parent="." unique_id=1996039540]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 248.0
+offset_right = 280.0
+offset_bottom = 552.0
+mouse_filter = 2
+color = Color(0.08, 0.1, 0.11, 0.95)
+
+[node name="DolapIlacGorsel" type="TextureRect" parent="KantinDolaplari" unique_id=1568126649]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 90.0
+offset_bottom = 298.0
+mouse_filter = 2
+texture = ExtResource("27_dolap_ilac")
+expand_mode = 1
+
+[node name="DolapYiyecekGorsel" type="TextureRect" parent="KantinDolaplari" unique_id=1436709131]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 6.0
+offset_right = 176.0
+offset_bottom = 298.0
+mouse_filter = 2
+texture = ExtResource("28_dolap_yemek")
+expand_mode = 1
+
+[node name="DolapIcecekGorsel" type="TextureRect" parent="KantinDolaplari" unique_id=867402702]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 6.0
+offset_right = 262.0
+offset_bottom = 298.0
+mouse_filter = 2
+texture = ExtResource("29_dolap_icecek")
+expand_mode = 1
+
+[node name="EsyaIlac1" type="TextureRect" parent="." unique_id=150490752]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 308.0
+offset_right = 56.0
+offset_bottom = 352.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Kehribar Şişe - Tutup Masaya Sürükle"
+texture = ExtResource("31_esya_ilac")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_adi = "Kehribar Şişe"
+
+[node name="EsyaIlac2" type="TextureRect" parent="." unique_id=1488716443]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 308.0
+offset_right = 94.0
+offset_bottom = 352.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Kehribar Şişe - Tutup Masaya Sürükle"
+texture = ExtResource("31_esya_ilac")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_adi = "Kehribar Şişe"
+
+[node name="EsyaIlacYesil1" type="TextureRect" parent="." unique_id=852322328]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 398.0
+offset_right = 56.0
+offset_bottom = 442.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Yeşil Şişe - Tutup Masaya Sürükle"
+texture = ExtResource("48_ilac_yesil")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "ilac_yesil"
+esya_adi = "Yeşil Şişe"
+
+[node name="EsyaIlacMavi1" type="TextureRect" parent="." unique_id=954901267]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 398.0
+offset_right = 94.0
+offset_bottom = 442.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Mavi Kapsül Paketi - Tutup Masaya Sürükle"
+texture = ExtResource("49_ilac_mavi")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "ilac_mavi"
+esya_adi = "Mavi Kapsül"
+
+[node name="EsyaSargi1" type="TextureRect" parent="." unique_id=1885517728]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 488.0
+offset_right = 56.0
+offset_bottom = 532.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Beyaz Rulo - Tutup Masaya Sürükle"
+texture = ExtResource("32_esya_sargi")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "sargi"
+esya_adi = "Beyaz Rulo"
+
+[node name="EsyaSargi2" type="TextureRect" parent="." unique_id=1526283737]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 488.0
+offset_right = 94.0
+offset_bottom = 532.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Beyaz Rulo - Tutup Masaya Sürükle"
+texture = ExtResource("32_esya_sargi")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "sargi"
+esya_adi = "Beyaz Rulo"
+
+[node name="EsyaKonserve1" type="TextureRect" parent="." unique_id=751315355]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 308.0
+offset_right = 142.0
+offset_bottom = 352.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Konserve - Tutup Masaya Sürükle"
+texture = ExtResource("33_esya_konserve")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "konserve"
+esya_adi = "Konserve"
+
+[node name="EsyaKonserve2" type="TextureRect" parent="." unique_id=344428802]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 308.0
+offset_right = 180.0
+offset_bottom = 352.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Konserve - Tutup Masaya Sürükle"
+texture = ExtResource("33_esya_konserve")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "konserve"
+esya_adi = "Konserve"
+
+[node name="EsyaKonserve3" type="TextureRect" parent="." unique_id=2096347175]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 398.0
+offset_right = 142.0
+offset_bottom = 442.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Konserve - Tutup Masaya Sürükle"
+texture = ExtResource("33_esya_konserve")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "konserve"
+esya_adi = "Konserve"
+
+[node name="EsyaCips1" type="TextureRect" parent="." unique_id=2074499184]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 398.0
+offset_right = 180.0
+offset_bottom = 442.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Cips - Tutup Masaya Sürükle"
+texture = ExtResource("34_esya_cips")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "cips"
+esya_adi = "Cips"
+
+[node name="EsyaCips2" type="TextureRect" parent="." unique_id=357251893]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 488.0
+offset_right = 142.0
+offset_bottom = 532.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Cips - Tutup Masaya Sürükle"
+texture = ExtResource("34_esya_cips")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "cips"
+esya_adi = "Cips"
+
+[node name="EsyaCips3" type="TextureRect" parent="." unique_id=618551079]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 488.0
+offset_right = 180.0
+offset_bottom = 532.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Cips - Tutup Masaya Sürükle"
+texture = ExtResource("34_esya_cips")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "cips"
+esya_adi = "Cips"
+
+[node name="EsyaKola1" type="TextureRect" parent="." unique_id=829750190]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 308.0
+offset_right = 228.0
+offset_bottom = 352.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Kola - Tutup Masaya Sürükle"
+texture = ExtResource("35_esya_kola")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "kola"
+esya_adi = "Kola"
+
+[node name="EsyaKola2" type="TextureRect" parent="." unique_id=1608207628]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 308.0
+offset_right = 266.0
+offset_bottom = 352.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Kola - Tutup Masaya Sürükle"
+texture = ExtResource("35_esya_kola")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "kola"
+esya_adi = "Kola"
+
+[node name="EsyaMeyveSuyu1" type="TextureRect" parent="." unique_id=284761175]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 398.0
+offset_right = 228.0
+offset_bottom = 442.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Meyve Suyu - Tutup Masaya Sürükle"
+texture = ExtResource("36_esya_meyvesuyu")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "meyvesuyu"
+esya_adi = "Meyve Suyu"
+
+[node name="EsyaMeyveSuyu2" type="TextureRect" parent="." unique_id=1284688070]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 398.0
+offset_right = 266.0
+offset_bottom = 442.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Meyve Suyu - Tutup Masaya Sürükle"
+texture = ExtResource("36_esya_meyvesuyu")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "meyvesuyu"
+esya_adi = "Meyve Suyu"
+
+[node name="EsyaKola3" type="TextureRect" parent="." unique_id=2008207419]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 488.0
+offset_right = 228.0
+offset_bottom = 532.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Kola - Tutup Masaya Sürükle"
+texture = ExtResource("35_esya_kola")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "kola"
+esya_adi = "Kola"
+
+[node name="EsyaMeyveSuyu3" type="TextureRect" parent="." unique_id=1101352226]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 488.0
+offset_right = 266.0
+offset_bottom = 532.0
+pivot_offset = Vector2(16, 22)
+tooltip_text = "Meyve Suyu - Tutup Masaya Sürükle"
+texture = ExtResource("36_esya_meyvesuyu")
+expand_mode = 1
+script = ExtResource("30_esya_kod")
+esya_kodu = "meyvesuyu"
+esya_adi = "Meyve Suyu"
+
+[node name="TeslimEtButonu" type="Button" parent="." unique_id=1737225528]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 204.0
+offset_right = 632.0
+offset_bottom = 278.0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="GardiyanEmri" type="TextureRect" parent="." unique_id=1502319199]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 286.0
+offset_right = 453.0
+offset_bottom = 381.0
+texture = ExtResource("14_emir")
+expand_mode = 1
+script = ExtResource("3_surukle")
+
+[node name="CezaeviPostasi" type="TextureRect" parent="." unique_id=1090140194]
+layout_mode = 0
+offset_left = 282.0
+offset_top = 408.0
+offset_right = 455.0
+offset_bottom = 547.0
+tooltip_text = "Cezaevi Postası (Okumak için Tıkla, Taşımak için Sürükle)"
+texture = ExtResource("15_gazete")
+expand_mode = 1
+script = ExtResource("3_surukle")
+
+[node name="KuralKitabi" type="TextureRect" parent="." unique_id=710609920]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 324.0
+offset_right = 788.0
+offset_bottom = 457.0
+tooltip_text = "Kural Kitabı (Açıp Okumak için Tıkla, Taşımak için Sürükle)"
+texture = ExtResource("16_kitap")
+expand_mode = 1
+script = ExtResource("3_surukle")
+
+[node name="TalepFisi" type="Control" parent="." unique_id=1037094443]
+visible = false
+z_index = 14
+z_as_relative = false
+anchors_preset = 0
+offset_left = 430.0
+offset_top = 232.0
+offset_right = 676.0
+offset_bottom = 520.0
+scale = Vector2(1.08, 1.08)
+pivot_offset = Vector2(123, 144)
+tooltip_text = "Talep Fişini Almak veya Taşımak için Tutup Sürükle"
+script = ExtResource("2_fis")
+
+[node name="DeliktekiKagit" type="TextureRect" parent="TalepFisi" unique_id=1578614545]
+visible = false
+layout_mode = 0
+offset_right = 92.0
+offset_bottom = 56.0
+mouse_filter = 2
+texture = ExtResource("40_delik_fis")
+expand_mode = 1
+
+[node name="KagitDokusu" type="TextureRect" parent="TalepFisi" unique_id=1054442847]
+layout_mode = 0
+offset_right = 246.0
+offset_bottom = 288.0
+mouse_filter = 2
+texture = ExtResource("17_form")
+expand_mode = 1
+
+[node name="VesikalikGorsel" type="TextureRect" parent="TalepFisi" unique_id=1643275824]
+modulate = Color(0.96, 0.93, 0.86, 1)
+layout_mode = 0
+offset_left = 18.0
+offset_top = 51.0
+offset_right = 92.0
+offset_bottom = 145.0
+mouse_filter = 2
+texture = ExtResource("12_mahkum")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BaslikYazisi" type="Label" parent="TalepFisi" unique_id=2106574743]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 12.0
+offset_right = 217.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.96, 0.91, 0.78, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 14
+text = "CEZAEVİ KANTİN TALEP FORMU"
+horizontal_alignment = 1
+
+[node name="AltBaslikYazisi" type="Label" parent="TalepFisi" unique_id=884883874]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 27.0
+offset_right = 217.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0.8, 0.73, 0.58, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "RESMİ İSTİHKAK BELGESİ • FORM 84/K"
+horizontal_alignment = 1
+
+[node name="SicilBaslik" type="Label" parent="TalepFisi" unique_id=2081219382]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 47.0
+offset_right = 227.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.95, 0.9, 0.76, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "MAHKUM SİCİL NO"
+horizontal_alignment = 1
+
+[node name="SicilDeger" type="Label" parent="TalepFisi" unique_id=1109171787]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 60.0
+offset_right = 227.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0.58, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 16
+text = "# 84092"
+horizontal_alignment = 1
+
+[node name="BlokBaslik" type="Label" parent="TalepFisi" unique_id=177348592]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 82.0
+offset_right = 227.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.95, 0.9, 0.76, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "KOĞUŞ / BLOK"
+horizontal_alignment = 1
+
+[node name="BlokDeger" type="Label" parent="TalepFisi" unique_id=340885896]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 95.0
+offset_right = 227.0
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(0.1, 0.14, 0.24, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 16
+text = "B BLOK"
+horizontal_alignment = 1
+
+[node name="IzinBaslik" type="Label" parent="TalepFisi" unique_id=232265235]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 117.0
+offset_right = 227.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.95, 0.9, 0.76, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "KANTİN İZİN STATÜSÜ"
+horizontal_alignment = 1
+
+[node name="IzinDeger" type="Label" parent="TalepFisi" unique_id=482899384]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 130.0
+offset_right = 227.0
+offset_bottom = 149.0
+theme_override_colors/font_color = Color(0.1, 0.34, 0.14, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 15
+text = "STANDART"
+horizontal_alignment = 1
+
+[node name="TabloBaslik" type="Label" parent="TalepFisi" unique_id=1614558348]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 156.0
+offset_right = 227.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0.96, 0.9, 0.76, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "İSTİHKAK TALEP ÇİZELGESİ"
+horizontal_alignment = 1
+
+[node name="KutuIlac" type="Label" parent="TalepFisi" unique_id=1231380838]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 172.0
+offset_right = 31.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.62, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 15
+text = "X"
+horizontal_alignment = 1
+
+[node name="SatirIlacAd" type="Label" parent="TalepFisi" unique_id=86513811]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 172.0
+offset_right = 166.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.08, 0.07, 0.06, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "Ağrı Kesici / Sargı"
+
+[node name="SatirIlacDurum" type="Label" parent="TalepFisi" unique_id=881095736]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 172.0
+offset_right = 228.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.62, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "TALEP VAR"
+horizontal_alignment = 1
+
+[node name="KutuYemek" type="Label" parent="TalepFisi" unique_id=2118005551]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 192.0
+offset_right = 31.0
+offset_bottom = 210.0
+theme_override_colors/font_color = Color(0.62, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 15
+text = "X"
+horizontal_alignment = 1
+
+[node name="SatirYemekAd" type="Label" parent="TalepFisi" unique_id=2076280085]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 192.0
+offset_right = 166.0
+offset_bottom = 210.0
+theme_override_colors/font_color = Color(0.08, 0.07, 0.06, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "Konserve / Cips"
+
+[node name="SatirYemekDurum" type="Label" parent="TalepFisi" unique_id=214205423]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 192.0
+offset_right = 228.0
+offset_bottom = 210.0
+theme_override_colors/font_color = Color(0.62, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "TALEP VAR"
+horizontal_alignment = 1
+
+[node name="KutuIcecek" type="Label" parent="TalepFisi" unique_id=1279301670]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 212.0
+offset_right = 31.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0.62, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 15
+horizontal_alignment = 1
+
+[node name="SatirIcecekAd" type="Label" parent="TalepFisi" unique_id=1045149897]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 212.0
+offset_right = 166.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0.08, 0.07, 0.06, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "Kola / Meyve Suyu"
+
+[node name="SatirIcecekDurum" type="Label" parent="TalepFisi" unique_id=386819569]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 212.0
+offset_right = 228.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0.38, 0.34, 0.28, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "YOK"
+horizontal_alignment = 1
+
+[node name="TarihBaslik" type="Label" parent="TalepFisi" unique_id=498448796]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 236.0
+offset_right = 110.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0.95, 0.9, 0.76, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "BELGE TARİHİ"
+horizontal_alignment = 1
+
+[node name="TarihDeger" type="Label" parent="TalepFisi" unique_id=513028787]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 250.0
+offset_right = 110.0
+offset_bottom = 271.0
+theme_override_colors/font_color = Color(0.08, 0.07, 0.06, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 14
+text = "18.04.1984"
+horizontal_alignment = 1
+
+[node name="OnayBaslik" type="Label" parent="TalepFisi" unique_id=1072502398]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 236.0
+offset_right = 227.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0.95, 0.9, 0.76, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "ONAYLAYAN YETKİLİ"
+horizontal_alignment = 1
+
+[node name="OnayDeger" type="Label" parent="TalepFisi" unique_id=1806039925]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 250.0
+offset_right = 227.0
+offset_bottom = 271.0
+theme_override_colors/font_color = Color(0.08, 0.16, 0.38, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 14
+text = "Guard Harlan"
+horizontal_alignment = 1
+
+[node name="DamgaGorsel" type="TextureRect" parent="TalepFisi" unique_id=1232054042]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 168.0
+offset_right = 198.0
+offset_bottom = 252.0
+rotation = -0.14
+mouse_filter = 2
+texture = ExtResource("23_baski_onay")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DamgaCekmecesi" type="Control" parent="." unique_id=629805726]
+anchors_preset = 0
+offset_left = 774.0
+offset_top = 408.0
+offset_right = 1024.0
+offset_bottom = 558.0
+mouse_filter = 2
+
+[node name="CekmeceZemin" type="TextureRect" parent="DamgaCekmecesi" unique_id=1206035997]
+z_index = 4
+z_as_relative = false
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 150.0
+mouse_filter = 2
+texture = ExtResource("25_cekmece_taban")
+expand_mode = 1
+
+[node name="CekmeceCerceve" type="TextureRect" parent="DamgaCekmecesi" unique_id=240870547]
+z_index = 20
+z_as_relative = false
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 150.0
+mouse_filter = 2
+texture = ExtResource("46_cekmece_cerceve")
+expand_mode = 1
+
+[node name="GolgeRed" type="TextureRect" parent="DamgaCekmecesi" unique_id=770196639]
+modulate = Color(1, 1, 1, 0.75)
+z_index = 22
+z_as_relative = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 98.0
+offset_right = 123.0
+offset_bottom = 134.0
+mouse_filter = 2
+texture = ExtResource("47_damga_golge")
+expand_mode = 1
+
+[node name="GolgeOnay" type="TextureRect" parent="DamgaCekmecesi" unique_id=943970530]
+modulate = Color(1, 1, 1, 0.75)
+z_index = 22
+z_as_relative = false
+layout_mode = 0
+offset_left = 150.0
+offset_top = 99.0
+offset_right = 230.0
+offset_bottom = 135.0
+mouse_filter = 2
+texture = ExtResource("47_damga_golge")
+expand_mode = 1
+
+[node name="CekmeceKolButonu" type="Button" parent="DamgaCekmecesi" unique_id=1703520860]
+z_index = 28
+z_as_relative = false
+layout_mode = 0
+offset_top = 30.0
+offset_right = 30.0
+offset_bottom = 120.0
+tooltip_text = "Damga Çekmecesini Aç / Kapat"
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="CekmeceOkYazisi" type="Label" parent="DamgaCekmecesi" unique_id=1854954412]
+z_index = 28
+z_as_relative = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 56.0
+offset_right = 22.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0.9, 0.82, 0.62, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 16
+text = ">>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RedButonu" type="TextureButton" parent="DamgaCekmecesi" unique_id=1356117329]
+z_index = 26
+z_as_relative = false
+layout_mode = 0
+offset_left = 39.0
+offset_top = 26.0
+offset_right = 127.0
+offset_bottom = 122.0
+tooltip_text = "REDDET (Kırmızı Mühür - Evrakı Altına Getir veya Sürükle)"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("18_red_n")
+texture_pressed = ExtResource("19_red_p")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("45_damga_aleti")
+damga_tipi = "REDDEDİLDİ"
+
+[node name="OnayButonu" type="TextureButton" parent="DamgaCekmecesi" unique_id=810936967]
+z_index = 26
+z_as_relative = false
+layout_mode = 0
+offset_left = 146.0
+offset_top = 26.0
+offset_right = 233.0
+offset_bottom = 123.0
+tooltip_text = "ONAYLA (Yeşil Mühür - Evrakı Altına Getir veya Sürükle)"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("20_onay_n")
+texture_pressed = ExtResource("21_onay_p")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("45_damga_aleti")
+
+[node name="GazeteOkumaPaneli" type="TextureRect" parent="." unique_id=1823735844]
+visible = false
+z_index = 25
+layout_mode = 0
+offset_left = 280.0
+offset_top = 135.0
+offset_right = 740.0
+offset_bottom = 455.0
+texture = ExtResource("37_gazete_acik")
+expand_mode = 1
+script = ExtResource("3_surukle")
+
+[node name="GazeteAnaBaslik" type="Label" parent="GazeteOkumaPaneli" unique_id=206362114]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 16.0
+offset_right = 410.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.11, 0.1, 0.09, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 21
+text = "CEZAEVİ POSTASI  -  18 NİSAN 1984"
+horizontal_alignment = 1
+
+[node name="SolBaslik" type="Label" parent="GazeteOkumaPaneli" unique_id=688284104]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 56.0
+offset_right = 218.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.84, 0.78, 0.66, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "ARANANLAR VE ŞÜPHELİLER"
+horizontal_alignment = 1
+
+[node name="Aranan1Yazi" type="Label" parent="GazeteOkumaPaneli" unique_id=1201972871]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 79.0
+offset_right = 222.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0.12, 0.11, 0.09, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "MAHKUM #55310 (B Blok)
+SUÇ: Sahte reçete (1983)
+ve revir ilaç kaçakçılığı.
+GÖRÜLDÜĞÜNDE REDDEDİN!"
+autowrap_mode = 2
+
+[node name="Aranan2Yazi" type="Label" parent="GazeteOkumaPaneli" unique_id=1938169847]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 145.0
+offset_right = 222.0
+offset_bottom = 205.0
+theme_override_colors/font_color = Color(0.12, 0.11, 0.09, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "GUARD VOSS (Eski)
+SUÇ: Rüşvet ve mahkumlara
+yasadışı mühür sağlama.
+İmzası GEÇERSİZDİR!"
+autowrap_mode = 2
+
+[node name="SolAltYazi" type="Label" parent="GazeteOkumaPaneli" unique_id=953224946]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 216.0
+offset_right = 222.0
+offset_bottom = 306.0
+theme_override_colors/font_color = Color(0.14, 0.12, 0.1, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "İHBAR HATTI DUYURUSU:
+B Blok koğuşlarında gece
+sayımında 14 kutu ağrı
+kesici ele geçirildi. B Blok
+ilaç izni süresiz kapatıldı."
+autowrap_mode = 2
+
+[node name="SagBaslik" type="Label" parent="GazeteOkumaPaneli" unique_id=2044103446]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 56.0
+offset_right = 440.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.84, 0.78, 0.66, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "GÜNDELİK CEZAEVİ HABERLERİ"
+horizontal_alignment = 1
+
+[node name="SagUstYazi" type="Label" parent="GazeteOkumaPaneli" unique_id=1919260407]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 78.0
+offset_right = 442.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "- KANTİN STOK KRİZİ:
+Depo arızası nedeniyle konserve
+ve cips istihkakları denetime
+alındı. Fişsiz ürün verilmez.
+- YETKİLİ GARDİYANLAR:
+Bugün yalnızca Guard Harlan
+ve Guard Cole imzaları geçerlidir."
+autowrap_mode = 2
+
+[node name="SagAltYazi" type="Label" parent="GazeteOkumaPaneli" unique_id=353357056]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 212.0
+offset_right = 442.0
+offset_bottom = 308.0
+theme_override_colors/font_color = Color(0.13, 0.11, 0.09, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "- GECE KARARTMASI (21:00):
+Doğu koridorundaki voltaj düşüşü
+nedeniyle 21:00 sonrası tüm
+bloklarda ışıklar kapatılacaktır.
+[ Kapatmak için X veya Gazete ]"
+autowrap_mode = 2
+
+[node name="GazeteKapatButonu" type="Button" parent="GazeteOkumaPaneli" unique_id=753339365]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 14.0
+offset_right = 446.0
+offset_bottom = 44.0
+tooltip_text = "Gazeteyi Kapat"
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.55, 0.14, 0.12, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 18
+text = "[X]"
+flat = true
+
+[node name="KuralKitabiPaneli" type="TextureRect" parent="." unique_id=2078125458]
+visible = false
+z_index = 25
+layout_mode = 0
+offset_left = 290.0
+offset_top = 128.0
+offset_right = 750.0
+offset_bottom = 458.0
+texture = ExtResource("41_kitap_acik")
+expand_mode = 1
+script = ExtResource("3_surukle")
+
+[node name="Sayfa1Kurallar" type="Control" parent="KuralKitabiPaneli" unique_id=2098029129]
+anchors_preset = 0
+offset_right = 460.0
+offset_bottom = 330.0
+mouse_filter = 2
+
+[node name="SolSayfaBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=1818580614]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 19.0
+offset_right = 216.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.72, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "BLOK İSTİHKAK İZİNLERİ"
+horizontal_alignment = 1
+
+[node name="ABlokBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=1385486702]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 51.0
+offset_right = 214.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.92, 0.96, 0.88, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "A BLOK (GENEL KOĞUŞ)"
+horizontal_alignment = 1
+
+[node name="ABlokIcerik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=135395480]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 70.0
+offset_right = 214.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "• Yiyecek (Konserve/Rasyon): SERBEST
+• İçecek (Kola/M.Suyu): SERBEST
+• İlaç / Sargı Bezi: YASAK!"
+
+[node name="BBlokBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=1607253957]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 137.0
+offset_right = 214.0
+offset_bottom = 154.0
+theme_override_colors/font_color = Color(0.98, 0.9, 0.78, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "B BLOK (DİSİPLİN KOĞUŞU)"
+horizontal_alignment = 1
+
+[node name="BBlokIcerik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=453641029]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 156.0
+offset_right = 214.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "• Yiyecek (Konserve/Rasyon): SERBEST
+• İçecek (Kola/M.Suyu): YASAK!
+• İlaç / Sargı Bezi: KESİN YASAK!"
+
+[node name="CBlokBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=182742102]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 223.0
+offset_right = 214.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.88, 0.94, 0.98, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "C BLOK (REVİR KOĞUŞU)"
+horizontal_alignment = 1
+
+[node name="CBlokIcerik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=101186187]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 242.0
+offset_right = 214.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "• İlaç / Sargı Bezi: SERBEST
+• Yiyecek (Konserve/Rasyon): YASAK!
+• İçecek (Kola/M.Suyu): YASAK!"
+
+[node name="SagSayfaBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=231449486]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 19.0
+offset_right = 406.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.72, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "KANTİN MEMUR TALİMATI"
+horizontal_alignment = 1
+
+[node name="EvrakKuralBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=725896900]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 51.0
+offset_right = 432.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.96, 0.88, 0.78, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "1. EVRAK VE ONAY ŞARTLARI"
+horizontal_alignment = 1
+
+[node name="EvrakKuralIcerik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=395153463]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 70.0
+offset_right = 432.0
+offset_bottom = 164.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "• Geçerli Tarih: 18.04.1984
+  (Eski tarihli fişleri REDDEDİN!)
+• Yetkili İmza: Guard Harlan ve Guard Cole
+  (Guard Voss imzası GEÇERSİZ!)
+• İzin: Kısıtlı olanları REDDEDİN!"
+autowrap_mode = 2
+
+[node name="TeslimatKuralBaslik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=1577286561]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 173.0
+offset_right = 432.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.74, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "2. İLAÇ & REVİR KILAVUZU"
+horizontal_alignment = 1
+
+[node name="TeslimatKuralIcerik" type="Label" parent="KuralKitabiPaneli/Sayfa1Kurallar" unique_id=396838547]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 193.0
+offset_right = 432.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "• Kehribar Şişe: Ağrı Kesici
+• Yeşil Şişe: Sakinleştirici Damla
+• Mavi Paket: Antibiyotik Kapsül
+• Beyaz Rulo: Steril Sargı Bezi
+(Sadece C Blok revir izniyle verilir!
+A ve B bloklarına ilaç KESİN YASAKTIR!)"
+autowrap_mode = 2
+
+[node name="Sayfa2NasilOynanir" type="Control" parent="KuralKitabiPaneli" unique_id=1848918632]
+visible = false
+anchors_preset = 0
+offset_right = 460.0
+offset_bottom = 330.0
+mouse_filter = 2
+
+[node name="SolSayfaBaslik2" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1474281972]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 19.0
+offset_right = 216.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.72, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "GÖREV REHBERİ (GİŞE)"
+horizontal_alignment = 1
+
+[node name="Adim1Baslik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1406436436]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 51.0
+offset_right = 214.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.92, 0.96, 0.88, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "1. SIRADAKİ MAHKUM"
+horizontal_alignment = 1
+
+[node name="Adim1Icerik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=646572962]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 70.0
+offset_right = 214.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "• Masadaki kırmızı butona basarak koridordaki sıradaki mahkumu çağırın."
+autowrap_mode = 2
+
+[node name="Adim2Baslik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=939935835]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 137.0
+offset_right = 214.0
+offset_bottom = 154.0
+theme_override_colors/font_color = Color(0.98, 0.9, 0.78, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "2. TALEP FİŞİ"
+horizontal_alignment = 1
+
+[node name="Adim2Icerik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1499820204]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 156.0
+offset_right = 214.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "• Gişe deliğinden uzatılan fişi tutup masaya çekin."
+autowrap_mode = 2
+
+[node name="Adim3Baslik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1625667678]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 223.0
+offset_right = 214.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.88, 0.94, 0.98, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "3. [EŞLEŞTİR] MODU"
+horizontal_alignment = 1
+
+[node name="Adim3Icerik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1163686465]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 242.0
+offset_right = 214.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "• Sol alttaki Büyüteç butonuyla eşleştirme modunu açın. Fotoğraf, tarih veya imzayı seçip çelişkileri bulun."
+autowrap_mode = 2
+
+[node name="SagSayfaBaslik2" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1623865572]
+layout_mode = 0
+offset_left = 238.0
+offset_top = 19.0
+offset_right = 406.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.72, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 13
+text = "MÜHÜR VE TESLİMAT"
+horizontal_alignment = 1
+
+[node name="Adim4Baslik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=172359197]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 51.0
+offset_right = 432.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.96, 0.88, 0.78, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "4. MÜHÜR BASMA"
+horizontal_alignment = 1
+
+[node name="Adim4Icerik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=1663234027]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 70.0
+offset_right = 432.0
+offset_bottom = 164.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "• Fişi mühürleme yuvasına sürükleyin. Çekmeceden ONAY (Yeşil) veya RET (Kırmızı) mührünü fişin onay kutusuna basın."
+autowrap_mode = 2
+
+[node name="Adim5Baslik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=304523103]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 173.0
+offset_right = 432.0
+offset_bottom = 190.0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.74, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 11
+text = "5. DOLAP & TESLİMAT"
+horizontal_alignment = 1
+
+[node name="Adim5Icerik" type="Label" parent="KuralKitabiPaneli/Sayfa2NasilOynanir" unique_id=101376807]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 193.0
+offset_right = 432.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.12, 0.1, 0.08, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 10
+text = "• Onayladıysanız eşyaları dolaptan masaya indirin. Ret verdiyseniz EŞYA VERMEYİN!
+• Eşyaları ve mühürlü fişi Teslim Bölmesine koyup bölmeye tıklayın.
+• Doğru: +15 $ | Ceza: -10 $ / -20 $"
+autowrap_mode = 2
+
+[node name="KitapSayfa1Butonu" type="Button" parent="KuralKitabiPaneli" unique_id=710320211]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 298.0
+offset_right = 144.0
+offset_bottom = 324.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.25, 0.2, 0.15, 1)
+theme_override_colors/font_hover_color = Color(0.72, 0.22, 0.18, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "◄ 1. KURALLAR"
+flat = true
+
+[node name="KitapSayfa2Butonu" type="Button" parent="KuralKitabiPaneli" unique_id=216529214]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 298.0
+offset_right = 438.0
+offset_bottom = 324.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.25, 0.2, 0.15, 1)
+theme_override_colors/font_hover_color = Color(0.72, 0.22, 0.18, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 12
+text = "2. NASIL OYNANIR ►"
+flat = true
+
+[node name="KitapKapatButonu" type="Button" parent="KuralKitabiPaneli" unique_id=2348544]
+layout_mode = 0
+offset_left = 412.0
+offset_top = 14.0
+offset_right = 442.0
+offset_bottom = 42.0
+tooltip_text = "Kural Kitabını Kapat"
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.95, 0.82, 0.68, 1)
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 17
+text = "[X]"
+flat = true
+
+[node name="BildirimKutusu" type="ColorRect" parent="." unique_id=230436272]
+visible = false
+layout_mode = 0
+offset_left = 298.0
+offset_top = 250.0
+offset_right = 815.0
+offset_bottom = 284.0
+mouse_filter = 2
+color = Color(0.08, 0.08, 0.08, 0.92)
+
+[node name="BildirimYazisi" type="Label" parent="BildirimKutusu" unique_id=614193974]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 507.0
+offset_bottom = 30.0
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("22_font")
+theme_override_font_sizes/font_size = 16
+text = "Bildirim"
+horizontal_alignment = 1
+vertical_alignment = 1
